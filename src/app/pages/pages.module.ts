@@ -13,6 +13,7 @@ import { PagesComponent } from './pages.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
+import { AccountsettingsComponent } from './accountsettings/accountsettings.component';
 
 
 
@@ -24,6 +25,7 @@ import { ComponentsModule } from '../components/components.module';
     Graph1Component,
     PagesComponent,
     NopagefoundComponent,
+    AccountsettingsComponent,
 
   ],
   imports: [
@@ -40,7 +42,7 @@ import { ComponentsModule } from '../components/components.module';
     Graph1Component,
     PagesComponent,
     NopagefoundComponent,
-
+    AccountsettingsComponent,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
