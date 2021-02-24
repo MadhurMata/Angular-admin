@@ -1,1 +1,42 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-info progress-bar-striped active" [style.width]="getBluebarPercentage" style="height:10px;" role="progressbar">
+                    </div>
+                </div>
+
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-warning progress-bar-striped active" [style.width]="getOrangePercentage" style="height:10px;" role="progressbar">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <app-incrementer btnClass="btn-info" (valueChange)="progressBluebar = $event" [progress]="progressBluebar"></app-incrementer>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <app-incrementer (valueChange)="progressOrangebar = $event" [progress]="progressOrangebar"></app-incrementer>
+
+            </div>
+        </div>
+    </div>
+</div>
