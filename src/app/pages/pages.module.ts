@@ -14,6 +14,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../components/components.module';
 import { AccountsettingsComponent } from './accountsettings/accountsettings.component';
+import { PromisesComponent } from './promises/promises.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -26,6 +28,8 @@ import { AccountsettingsComponent } from './accountsettings/accountsettings.comp
     PagesComponent,
     NopagefoundComponent,
     AccountsettingsComponent,
+    PromisesComponent,
+    RxjsComponent,
 
   ],
   imports: [
@@ -34,7 +38,7 @@ import { AccountsettingsComponent } from './accountsettings/accountsettings.comp
     RouterModule,
     FormsModule,
     ComponentsModule,
-    ChartsModule
+    ChartsModule,
   ],
   exports: [
     DashboardComponent,
@@ -43,6 +47,8 @@ import { AccountsettingsComponent } from './accountsettings/accountsettings.comp
     PagesComponent,
     NopagefoundComponent,
     AccountsettingsComponent,
+    PromisesComponent,
+    RxjsComponent
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
